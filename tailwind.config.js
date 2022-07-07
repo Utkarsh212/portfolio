@@ -7,7 +7,10 @@ module.exports = {
     extend: {
       animation: {
         spin: 'spin 3s infinite',
-        rubber: 'rubber 750ms infinite ease-out'
+        rubber: 'rubber 750ms infinite ease-out',
+        baflg: 'baflg 10s infinite',
+        baf: 'baf 10s infinite',
+        bafxs: 'bafxs 10s infinite'
       },
       keyframes: {
         rubber: {
@@ -32,9 +35,43 @@ module.exports = {
           '100%': {
             transform: 'scaleX(1) scaleY(1)'
           }
+        },
+        baflg: {
+          '0%': {
+            opacity: '1'
+          },
+          '100%': {
+            opacity: '0',
+            transform: 'translate(-50%)'
+          }
+        },
+        baf: {
+          '0%': {
+            opacity: '1'
+          },
+          '100%': {
+            opacity: '0',
+            transform: 'translate(-100%)'
+          }
+        },
+        bafxs: {
+          '0%': {
+            opacity: '1'
+          },
+          '25%': {
+            opacity: '0',
+            transform: 'translateY(-100%)'
+          },
+          '50%': {
+            opacity: '0',
+            transform: 'translateY(20%)'
+          },
+          '100%': {
+            opacity: '1'
+          }
         }
       }
-    },
+    }
   },
   plugins: [],
 }
