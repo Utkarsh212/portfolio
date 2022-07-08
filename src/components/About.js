@@ -5,9 +5,9 @@ function About() {
   return (
     <div className='text-white space-y-8 md:space-y-14'>
       <div>
-        <span className='text-[#FFC501] text-2xl font-["La_Belle_Aurore"]'>&lt;h1&gt;</span>
+        <span className='text-[#FFC501] text-xl font-["La_Belle_Aurore"]'>&lt;h1&gt;</span>
         <br />
-        <h1 className='text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-["League_Spartan"] font-semibold tracking-wider'>
+        <h1 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-["League_Spartan"] font-semibold tracking-wider'>
           <AnimateText text="About" />&nbsp;<AnimateText text="me" />
         </h1>
         <span className='text-[#FFC501] text-2xl font-["La_Belle_Aurore"]'>&lt;h1&gt;</span>

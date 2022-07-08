@@ -1,10 +1,10 @@
 import React from 'react'
+import AnimateText from './AnimateText'
 
 function Contact() {
   const [formData, setFormData] = React.useState(
     {
-      firstName: "",
-      lastName: "",
+      Name: "",
       email: "",
       comments: ""
     }
@@ -25,59 +25,56 @@ function Contact() {
     // submitToApi(formData)
     console.log(formData)
     setFormData({
-      firstName: "",
-      lastName: "",
+      Name: "",
       email: "",
       comments: ""
     })
   }
   return (
-    <div>
-      <span>&lt;h1&gt;</span>
-      <h1>Contact me</h1>
-      <span>&lt;h1&gt;</span>
-      <p>Want to connect? My inbox is always open! Don't hesitate to contact me using below form either.</p>
-      <form onSubmit={handleSubmit}>
-        <input
-          className='input-elem'
-          id='first-name'
-          type="text"
-          placeholder="First Name"
-          onChange={handleChange}
-          name="firstName"
-          value={formData.firstName}
-        />
-        <input
-          className='input-elem'
-          id='last-name'
-          type="text"
-          placeholder="Last Name"
-          onChange={handleChange}
-          name="lastName"
-          value={formData.lastName}
-        />
+    <div className='text-white space-y-4'>
+      <div>
+        <span className='text-[#FFC501] text-xl font-["La_Belle_Aurore"]'>&lt;h1&gt;</span>
         <br />
-        <input
-          className='input-elem'
-          id='email'
-          type="email"
-          placeholder="Email"
-          onChange={handleChange}
-          name="email"
-          value={formData.email}
-        />
-        <br />
-        <textarea
-          className='input-elem'
-          id='comments'
-          value={formData.comments}
-          placeholder="Comments"
-          onChange={handleChange}
-          name="comments"
-        />
-        <br />
-        <button className='help-section--button'>Submit</button>
-      </form>
+        <h1 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-["League_Spartan"] font-semibold tracking-wider'>
+          <AnimateText text="Contact" />
+        </h1>
+        <span className='text-[#FFC501] text-xl font-["La_Belle_Aurore"]'>&lt;h1&gt;</span>
+      </div>
+      <p className='text-md md:text-lg lg:text-xl font-["League_Spartan"]'>Want to connect? My inbox is always open! Don't hesitate to contact me using below form either.</p>
+      <div>
+        <form onSubmit={handleSubmit} className="bg-white text-black p-4 flex flex-col">
+          <input
+            className='font-light border focus:outline-none py-2 px-1 mx-4 focus:ring-2 focus:border-none ring-[#FFC501]'
+            id='name'
+            type="text"
+            placeholder="Name"
+            onChange={handleChange}
+            name="Name"
+            value={formData.Name}
+          />
+          <br />
+          <input
+            className='font-light border focus:outline-none py-2 px-1 mx-4 focus:ring-2 focus:border-none ring-[#FFC501]'
+            id='email'
+            type="email"
+            placeholder="Email"
+            onChange={handleChange}
+            name="email"
+            value={formData.email}
+          />
+          <br />
+          <textarea
+            className='font-light border focus:outline-none py-2 px-1 mx-4 focus:ring-2 focus:border-none ring-[#FFC501]'
+            id='comments'
+            value={formData.comments}
+            placeholder="Message"
+            onChange={handleChange}
+            name="comments"
+          />
+          <br />
+          <button className='hover:text-white text-[#354F60] border-2 border-[#FFC501] hover:bg-[#BC0E4C] w-[max(30%,180px)] mx-4 py-2 text-gray-50 font-bold'>SUBMIT</button>
+        </form>
+      </div>
     </div>
   )
 }

@@ -41,7 +41,7 @@ function Sidebar() {
         <NavLink exact="true" className={`${currentPath === "skills" ? "text-[#BC0E4C] animate-spin" : ""}`} to="/skills">
           <FontAwesomeIcon icon={faCog} size="2x" />
         </NavLink>
-        <NavLink exact="true" className={`${currentPath === "work" ? "text-[#BC0E4C] animate-bounce" : ""}`} to="/work">
+        <NavLink exact="true" className={`${currentPath === "projects" ? "text-[#BC0E4C] animate-bounce" : ""}`} to="/projects">
           <FontAwesomeIcon icon={faBriefcase} size="2x" />
         </NavLink>
         <NavLink exact="true" className={`${currentPath === "contact" ? "text-[#BC0E4C] animate-bounce" : ""}`} to="/contact">
