@@ -3,14 +3,14 @@ import AnimateText from './AnimateText'
 
 function About() {
   return (
-    <div className='text-white space-y-8 md:space-y-14'>
+    <div className='flex flex-col justify-center items-start text-white space-y-5'>
       <div>
         <span className='text-[#FFC501] text-xl font-["La_Belle_Aurore"]'>&lt;h1&gt;</span>
         <br />
         <h1 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-["League_Spartan"] font-semibold tracking-wider'>
           <AnimateText text="About" />&nbsp;<AnimateText text="me" />
         </h1>
-        <span className='text-[#FFC501] text-2xl font-["La_Belle_Aurore"]'>&lt;h1&gt;</span>
+        <span className='text-[#FFC501] text-2xl font-["La_Belle_Aurore"]'>&lt;/h1&gt;</span>
       </div>
       <p className='text-md md:text-lg lg:text-xl font-["League_Spartan"]'>
         Hi! 👋 I'm Utkarsh, a engineering sophomore pursuing B.Tech. in Computer and Communication Engineering. I am a passionate self-learner, Open source enthusiast, exploring and building projects 👨‍💻 and making things simple using various technologies.<br/><br/>

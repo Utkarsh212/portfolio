@@ -38,7 +38,7 @@ function Contact() {
         <h1 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-["League_Spartan"] font-semibold tracking-wider'>
           <AnimateText text="Contact" />
         </h1>
-        <span className='text-[#FFC501] text-xl font-["La_Belle_Aurore"]'>&lt;h1&gt;</span>
+        <span className='text-[#FFC501] text-xl font-["La_Belle_Aurore"]'>&lt;/h1&gt;</span>
       </div>
       <p className='text-md md:text-lg lg:text-xl font-["League_Spartan"]'>Want to connect? My inbox is always open! Don't hesitate to contact me using below form either.</p>
       <div>
@@ -72,7 +72,7 @@ function Contact() {
             name="comments"
           />
           <br />
-          <button className='hover:text-white text-[#354F60] border-2 border-[#FFC501] hover:bg-[#BC0E4C] w-[max(30%,180px)] mx-4 py-2 text-gray-50 font-bold'>SUBMIT</button>
+          <button className='hover:text-white text-[#354F60] border-2 border-[#FFC501] hover:bg-[#BC0E4C] w-[max(30%,180px)] mx-4 py-2 font-bold'>SUBMIT</button>
         </form>
       </div>
     </div>
