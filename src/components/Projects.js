@@ -3,6 +3,31 @@ import AnimateText from './AnimateText'
 import Card from './Card'
 
 function Projects() {
+  const Username = process.env.USERNAME
+  const API_URL = `https://api.github.com/users/${Username}/repos`
+  const [projectList, setProjectList] = React.useState([])
+  const [fetchError, setFetchError] = React.useState(null)
+  const [isLoading, setIsLoading] = React.useState(true)
+  React.useEffect(() => {
+    const fetchRepos = async () => {
+        try{
+          const response = await fetch(API_URL)
+          if (!response.ok) throw Error('Did not received expected data')
+          const repoList = await response.json()
+          setProjectList(repoList)
+          console.log(projectList)
+          setFetchError(null)
+        }catch(err){
+          console.log(err.message)
+          setFetchError(err.message)
+        }finally{
+          setIsLoading(false)
+        }
+    }
+    setTimeout(()=>{
+      (async () => await fetchRepos())()
+    }, 2000)
+  }, [])
   return (
     <div className='w-full flex flex-col justify-center items-start space-y-5'>
       <div className='text-white'>
