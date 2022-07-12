@@ -18,7 +18,7 @@ function About() {
         I'm quietly confident, naturally curious, and love to interact with people and help others.<br/>
         If I need to define myself in one sentence that would be an Engineering Student interests in Travelling, Music lover, and tech-obsessed!!!
       </p>
-      <button type="button" className='w-[max(30%,180px)] py-2 px-4 text-[#FFC501] hover:bg-[#FFC501] border-2 border-[#FFC501] hover:text-[#354F60] transition ease-in duration-200 text-center text-base font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 tracking-widest'>
+      <button type="button" className='w-[max(20%,180px)] py-2 px-4 text-[#FFC501] hover:bg-[#FFC501] border-2 border-[#FFC501] hover:text-[#354F60] transition ease-in duration-200 text-center text-base font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 tracking-widest'>
           RESUME
         </button>
     </div>

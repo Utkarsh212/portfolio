@@ -7,7 +7,7 @@ function Layout() {
             <aside className='w-screen h-fit min-w-fit lg:w-[4%] lg:fixed lg:left-0 lg:top-0 lg:h-screen bg-[#181818]'>
                 <Sidebar />
             </aside>
-            <div className='w-screen min-h-screen lg:ml-[max(4%,71px)] lg:h-screen lg:w-full lg:p-2 bg-[#354F60] relative'>
+            <div className='w-screen h-fit min-h-screen lg:ml-[max(4%,71px)] lg:h-screen lg:w-[96%] lg:p-2 bg-[#354F60]'>
                     <p className='ml-3 lg:mt-4 text-[#FFC501] text-xl font-["La_Belle_Aurore"]'>&lt;html&gt;</p>
                     <p className='ml-16 mb-4 text-[#FFC501] text-xl font-["La_Belle_Aurore"]'>&lt;body&gt;</p>
                     <div className='pb-24 w-full h-3/4 pl-24 pr-10 lg:pl-36 lg:pr-16 flex justify-start items-center'>
