@@ -49,10 +49,10 @@ function Sidebar() {
         </NavLink>
       </div>
       <div className='flex lg:flex-col justify-center items-center space-x-3 lg:space-x-0 lg:space-y-2 text-xs lg:text-sm text-slate-200'>
-        <a target="_blank" rel="noreferrer" className="hover:text-[#BC0E4C]" href="https://github.com/Utkarsh212"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
-        <a target="_blank" rel="noreferrer" className="hover:text-[#BC0E4C]" href="https://www.linkedin.com/in/utkarsh-pancholi-7895261a9/"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
-        <a target="_blank" rel="noreferrer" className="hover:text-[#BC0E4C]" href="https://www.instagram.com/utkarsh.pancholi.12/?utm_source=qr"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
-        <a target="_blank" rel="noreferrer" className="hover:text-[#BC0E4C]" href="https://twitter.com/pancholiUtkarsh"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
+        <a target="_blank" rel="noreferrer" className="hover:text-white" href="https://github.com/Utkarsh212"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
+        <a target="_blank" rel="noreferrer" className="hover:text-[#0072B1]" href="https://www.linkedin.com/in/utkarsh-pancholi-7895261a9/"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+        <a target="_blank" rel="noreferrer" className="hover:text-[#FEDA77]" href="https://www.instagram.com/utkarsh.pancholi.12/?utm_source=qr"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
+        <a target="_blank" rel="noreferrer" className="hover:text-[#00ACEE]" href="https://twitter.com/pancholiUtkarsh"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
       </div>
     </div>
   )

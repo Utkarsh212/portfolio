@@ -6,7 +6,6 @@ import {
   faAt,
   faPhone
 } from "@fortawesome/free-solid-svg-icons";
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
 function Contact() {
   const ref = React.useRef(null);
@@ -61,20 +60,26 @@ function Contact() {
         <div className="flex flex-col justify-evenly items-center w-1/2 space-y-5 m-auto lg:m-0">
           <div className="flex flex-row items-center space-x-6 rounded-md border border-[#FFC501] hover:border hover:border-[#BC0E4C] p-2 min-w-[200px] w-full">
             <p className='text-gray-50 font-normal text-sm lg:text-base font-["League_Spartan"]'>
-              <FontAwesomeIcon icon={faPhone} color="#FFC501" />&nbsp;
+              <a href="tel:+919057506991">
+                <FontAwesomeIcon icon={faPhone} color="#FFC501" />&nbsp;&nbsp;
+              </a>
               +91 9987384723
             </p>
           </div>
           <div className="flex flex-row items-center space-x-6 rounded-md border border-[#FFC501] hover:border hover:border-[#BC0E4C] p-2 min-w-[200px] w-full">
             <p className='text-gray-50 font-normal text-sm lg:text-base font-["League_Spartan"]'>
-              <FontAwesomeIcon icon={faAt} color="#FFC501" />&nbsp;
+              <a href="mailto:utka21200@gmail.com">
+                <FontAwesomeIcon icon={faAt} color="#FFC501" />&nbsp;&nbsp;
+              </a>
               utka21200@gmail.com
             </p>
           </div>
           <div className="flex flex-row items-center space-x-6 rounded-md border border-[#FFC501] hover:border hover:border-[#BC0E4C] p-2 min-w-[200px] w-full">
             <p className='text-gray-50 font-normal text-sm lg:text-base font-["League_Spartan"]'>
-              <FontAwesomeIcon icon={faLocationDot} color="#FFC501" />&nbsp;
-              Jaipur, Rajasthan
+            <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/place/Ajmer,+Rajasthan/@26.4532432,74.6357137,12z/data=!3m1!4b1!4m5!3m4!1s0x396be6d8fcb7cd01:0xcbaf8f12eb8100ee!8m2!3d26.4498954!4d74.6399163">
+              <FontAwesomeIcon icon={faLocationDot} color="#FFC501" />&nbsp;&nbsp;
+            </a>
+              Ajmer, Rajasthan
             </p>
           </div>
         </div>

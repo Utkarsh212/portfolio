@@ -7,10 +7,10 @@ module.exports = {
     extend: {
       animation: {
         spin: 'spin 3s infinite',
-        rubber: 'rubber 750ms infinite ease-out',
+        rubber: 'rubber 1000ms infinite ease-out',
         baflg: 'baflg 10s infinite',
         baf: 'baf 10s infinite',
-        bafxs: 'bafxs 10s infinite'
+        bafxs: 'bafxs 10s infinite',
       },
       keyframes: {
         rubber: {
@@ -18,19 +18,19 @@ module.exports = {
             transform: 'scaleX(1)'
           },
           '40%': {
-            transform: 'scaleX(1.12) scaleY(0.75)'
+            transform: 'scaleX(1.2) scaleY(0.85)'
           },
           '55%': {
-            transform: 'scaleX(0.85) scaleY(1)'
+            transform: 'scaleX(0.95) scaleY(1)'
           },
           '65%': {
-            transform: 'scaleX(1.09) scaleY(0.85)'
+            transform: 'scaleX(1.19) scaleY(0.95)'
           },
           '75%': {
-            transform: 'scaleX(0.9)  scaleY(1)'
+            transform: 'scaleX(1)  scaleY(1.1)'
           },
           '90%': {
-            transform: 'scaleX(1.05) scaleY(0.95)'
+            transform: 'scaleX(1.15) scaleY(1.05)'
           },
           '100%': {
             transform: 'scaleX(1) scaleY(1)'

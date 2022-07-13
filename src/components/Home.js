@@ -16,7 +16,7 @@ function Home() {
           </p>
           <span className='text-[#FFC501] text-2xl font-["La_Belle_Aurore"]'>&lt;/h1&gt;</span>
         </div>
-        <p className='text-gray-200 text-sm lg:text-lg tracking-widest'>Front End Developer</p>
+        <p className='text-gray-200 text-sm lg:text-base tracking-widest'>Front End Developer</p>
         <Link exact="true" to="/contact"><button type="button" className='w-[max(30%,180px)] py-2 px-4 text-[#FFC501] hover:bg-[#FFC501] border-2 border-[#FFC501] hover:text-[#354F60] transition ease-in duration-200 text-center text-base font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 tracking-widest'>
           CONTACT ME
         </button></Link>
