@@ -40,7 +40,7 @@ function Contact() {
         </h1>
         <span className='text-[#FFC501] text-xl font-["La_Belle_Aurore"]'>&lt;/h1&gt;</span>
       </div>
-      <p className='text-md md:text-lg lg:text-xl font-["League_Spartan"]'>Want to connect? My inbox is always open! Don't hesitate to contact me using below form either.</p>
+      <p className='text-md md:text-lg lg:text-xl font-["League_Spartan"]'>Get in touch, let's talk. Fill in the details and feel free to connect with me.</p>
       <div>
         <form onSubmit={handleSubmit} className="bg-white text-black p-4 flex flex-col">
           <input

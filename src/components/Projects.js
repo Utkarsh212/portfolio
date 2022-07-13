@@ -6,7 +6,12 @@ import data from '../Data/data.json'
 function Projects() {
   /* const Username = process.env.USERNAME
   const API_URL = `https://api.github.com/users/Utkarsh212/repos` */
-  const [projectList, setProjectList] = React.useState(data)
+  const [projectList, setProjectList] = React.useState([])
+  React.useEffect(() => {
+    setTimeout(() => {
+      setProjectList(data)
+    }, 1500)
+  }, [])
   console.log(projectList)
   /* React.useEffect(() => {
     const fetchRepos = async () => {

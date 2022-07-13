@@ -13,7 +13,7 @@ import {
   faLinkedin,
   faGithub,
   faTwitter,
-  faDiscord,
+  faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 function Sidebar() {
   //assigning location variable
@@ -29,7 +29,7 @@ function Sidebar() {
     <div className='flex flex-col justify-between items-center lg:h-full p-2 space-y-4'>
       <div className='flex flex-col justify-center items-center'>
         <NavLink to="/"><img src={LogoU} alt='Utkarsh' className='w-14' />
-          <h4 className='text-white text-base'>Utkarsh</h4></NavLink>
+          <h4 className='text-white text-base hover:text-[#BC0E4C]'>Utkarsh</h4></NavLink>
       </div>
       <div className='flex lg:flex-col justify-center items-center space-x-6 lg:space-x-0 lg:space-y-6 text-xs lg:text-sm text-slate-200'>
         <NavLink exact="true" className={`${currentPath === "" ? "text-[#BC0E4C] animate-bounce" : ""}`} to="/">
@@ -49,10 +49,10 @@ function Sidebar() {
         </NavLink>
       </div>
       <div className='flex lg:flex-col justify-center items-center space-x-3 lg:space-x-0 lg:space-y-2 text-xs lg:text-sm text-slate-200'>
-        <a href="/"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
-        <a href="/"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
-        <a href="/"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
-        <a href="/"><FontAwesomeIcon icon={faDiscord} size="2x" /></a>
+        <a target="_blank" rel="noreferrer" className="hover:text-[#BC0E4C]" href="https://github.com/Utkarsh212"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
+        <a target="_blank" rel="noreferrer" className="hover:text-[#BC0E4C]" href="https://www.linkedin.com/in/utkarsh-pancholi-7895261a9/"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+        <a target="_blank" rel="noreferrer" className="hover:text-[#BC0E4C]" href="https://www.instagram.com/utkarsh.pancholi.12/?utm_source=qr"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
+        <a target="_blank" rel="noreferrer" className="hover:text-[#BC0E4C]" href="https://twitter.com/pancholiUtkarsh"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
       </div>
     </div>
   )
