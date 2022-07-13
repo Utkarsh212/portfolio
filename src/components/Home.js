@@ -1,5 +1,6 @@
 import React from 'react'
 import LogoU from '../assets/images/LogoU-03.png'
+import { Link } from 'react-router-dom'
 import AnimateText from './AnimateText'
 
 function Home() {
@@ -16,9 +17,9 @@ function Home() {
           <span className='text-[#FFC501] text-2xl font-["La_Belle_Aurore"]'>&lt;/h1&gt;</span>
         </div>
         <p className='text-gray-200 text-sm lg:text-lg tracking-widest'>Front End Developer</p>
-        <button type="button" className='w-[max(30%,180px)] py-2 px-4 text-[#FFC501] hover:bg-[#FFC501] border-2 border-[#FFC501] hover:text-[#354F60] transition ease-in duration-200 text-center text-base font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 tracking-widest'>
+        <Link exact="true" to="/contact"><button type="button" className='w-[max(30%,180px)] py-2 px-4 text-[#FFC501] hover:bg-[#FFC501] border-2 border-[#FFC501] hover:text-[#354F60] transition ease-in duration-200 text-center text-base font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 tracking-widest'>
           CONTACT ME
-        </button>
+        </button></Link>
       </div>
       <img src={LogoU} alt='Utkarsh' className='md: w-1/2 animate-bafxs lg:animate-baflg xl:animate-baf lg:-rotate-12' />
     </div>
@@ -26,4 +27,3 @@ function Home() {
 }
 
 export default Home
-/* hover:text-[#BC0E4C] */
