@@ -28,11 +28,11 @@ function Skills() {
         <div>
           <p className='text-md md:text-lg lg:text-xl font-["League_Spartan"]'>
             Skills
-            I am a front-end web developer well versed in technologies like HTML5, CSS3, JavaScript, React, Bootstrap, Tailwind Css, Git etc.
+            I am a MERN Stack Developer well versed in technologies like HTML5, CSS3, JavaScript, React, Node, Express, MongoDB, Bootstrap, Tailwind Css, Git etc.
             <br />
-            I'm not a designer but I have a good sense of aesthetics, and experience in responsive, web design. I put special effort into optimizing my code and providing the best user experience. I would love to give you any kind of support also after the project's completion.
+            I'm not a designer but I have a good sense of aesthetics, and experience in responsive, web design. I put special effort into optimizing my code and providing the best user experience.
             <br />
-            Visit my <a href="/">LinkedIn</a> and <a href="/">Github</a> profile for more details.
+            Visit my <a href="https://www.linkedin.com/in/utkarsh-pancholi-7895261a9/" className='font-semibold hover:underline hover:font-normal'>LinkedIn</a> and <a href="https://github.com/Utkarsh212" className='font-semibold hover:underline hover:font-normal'>Github</a> profile for more details.
           </p>
         </div>
       </div>
